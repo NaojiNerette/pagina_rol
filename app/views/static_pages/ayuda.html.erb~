@@ -1,0 +1,6 @@
+<% provide(:title, 'Ayuda') %>
+<h1>Ayuda</h1>
+<p>
+	Página de ayuda del sitio .... (En construcción)
+</p>
+
