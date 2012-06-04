@@ -1,0 +1,9 @@
+%header.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      = link_to "Kairn Telest", root_path, id: "logo"
+      %nav
+        %ul.nav.pull-right
+          %li
+            = link_to "Inicio",root_path
+            = link_to "Ayuda",ayuda_path

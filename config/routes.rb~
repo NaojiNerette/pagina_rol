@@ -1,7 +1,7 @@
 PaginaRol::Application.routes.draw do
-  get "static_pages/inicio"
-
-  get "static_pages/ayuda"
+  root to: 'static_pages#inicio'
+  match '/ayuda',	to: 'static_pages#ayuda'
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
