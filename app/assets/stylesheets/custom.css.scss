@@ -13,6 +13,9 @@ html {
 
 body {
   padding-top: 60px;
+  background-image: url('imagen.png');
+  background-size: 100%;
+  background-repeat: repeat-y;
 }
 
 section {
@@ -107,5 +110,4 @@ footer {
 	  }
 	}
 }
-
 

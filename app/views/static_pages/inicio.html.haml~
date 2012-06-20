@@ -2,4 +2,4 @@
   %h1 Las puertas de Kairn Telest
   %h2 Esta es la pagina principal
 = link_to root_path do
-  = image_tag "images/P1010478.jpg"
+  //= image_tag 'imagen.png'

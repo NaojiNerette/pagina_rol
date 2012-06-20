@@ -2,7 +2,7 @@
 
 /* mixins, variables, etc. */
 
-$grayMediumLight: #eaeaea;
+$grayMediumLight: #acacac;
 
 
 /* universal */
@@ -13,6 +13,9 @@ html {
 
 body {
   padding-top: 60px;
+  background-image: url('imagen.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 section {
@@ -107,5 +110,4 @@ footer {
 	  }
 	}
 }
-
 
