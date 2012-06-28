@@ -1,10 +1,14 @@
-%header.navbar.navbar-fixed-top
-  .navbar-inner
-    .container
-      = link_to "Kairn Telest", root_path, id: "logo"
+%header.header_general
+  .header_titulo
+    //.container
+    %div.center.hero-unit
+      = image_tag 'titulo.png'
       %nav
-        %ul.nav.pull-right
+        %ul 
+          //.nav.pull-right
           %li
             = link_to "Inicio",root_path
           %li
             = link_to "Ayuda",ayuda_path
+          %li
+            = link_to "Acerca de",about_path

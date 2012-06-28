@@ -1,5 +1,5 @@
 =provide(:title, 'About')
-%h1 Acerca de
+%h1 About
 %P 
   %strong "..Y a su partida, las puertas que no fueron cerradas en mucho tiempo, a ningun extranjero, se cerraron, dejando atras, la tenue esperanza del anhelo de regresar algun dia..."
 

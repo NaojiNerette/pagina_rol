@@ -1,9 +1,9 @@
-%header.header_general
-  .header_titulo
-    %div.center.imagen
-      = image_tag 'titulo.png'
+%header.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      = link_to "Kairn Telest", root_path, id: "logo"
       %nav
-        %ul 
+        %ul.nav.pull-right
           %li
             = link_to "Inicio",root_path
           %li
