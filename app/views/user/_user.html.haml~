@@ -1,7 +1,6 @@
 %div.bloke_profile
+  %div.image_profile
+    = image_tag 'n_nerette.png'
   %div.texto_profile
     %p Naoji Nerette
     %p Creador del sitio
-  %div.image_profile
-    = image_tag 'n_nerette.png'
-  

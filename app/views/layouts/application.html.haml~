@@ -9,7 +9,8 @@
   = render 'layouts/shim' 
 %body
   = render 'layouts/header'
-  %div.container
-    = render 'layout/modules'
-    = yield 
-    = render 'layouts/footer' 
+  %div.container_general
+    %div.container
+      = yield 
+    = render 'layouts/modules'
+  = render 'layouts/footer' 

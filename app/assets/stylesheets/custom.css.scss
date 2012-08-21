@@ -4,6 +4,11 @@
 
 $grayMediumLight: #acacac;
 
+/* override */
+.container{
+  margin-left: 50px !important;
+}
+
 
 /* universal */
 
@@ -32,6 +37,38 @@ textarea {
       margin-bottom: 10px;
     }
 }
+
+.left{
+  text-align: left;
+}
+
+.texto_contenido{
+  padding: 50px;
+  margin-bottom: 20px;
+  background-color: whiteSmoke;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  .parrafo_contenido{
+    text-align: left;
+  }
+  .imagen_contenido{
+    position: relative;
+    float: left; 
+    margin-left: 10px;
+    margin-right: 20px;
+    img {
+      max-width: 250px;  
+    }
+  }
+}
+
+.cita{
+  font-style: italic;
+}
+
+
+
 
 
 /* typography */
@@ -90,22 +127,71 @@ p {
   padding-left: 20px;
   padding-right: 20px;
   background-repeat: repeat-x;
-  border-radius: 4px;
-  background-color: whiteSmoke;
+  //border-radius: 4px;
+  background-color: currentcolor;
   .imagen{
     padding: 40px;
     margin-bottom: 30px;
     border-radius: 6px;
-  }  
+  }
+  .menu_nav{
+    max-width: 200px;
+    margin: 10px 20px;
+  }
+  nav{
+    float:right;
+    margin: 0px 20px;
+    width: 240px;
+    background-color: whiteSmoke;
+    border-radius: 10px;
+  }
+  ul{
+    width:200px;
+    list-style: none;
+    margin: 0px;
+  }
+  li{
+    background-color:#000000;
+    margin-bottom: 15px;
+    height: 25px;
+}
+
 }
 
 .header_menu{
 
 }
 
-nav{
-  max-width:200px;
-  float:right;
+/* modulos */
+.modulo_derecha{
+  position: relative;
+  background-color: currentcolor;
+  float: right;
+  width:300px;
+  margin-right: 20px;
+  border-radius: 4px; 
+  min-height:300px;
+  .contenido_modulo_der{
+    margin:20px;
+    color:honeydew;
+  }
+
+}
+
+.image_profile{
+  max-width: 50px;
+  display: inline-block;
+  margin: 3px 5px 3px 3px;
+  float:left;
+}
+
+.texto_profile{
+  max-width: 200px;
+  display: inline-block;
+  margin-top: 5px;
+  p{
+    line-height: 1em;
+  }
 }
 
 /* footer */
@@ -115,7 +201,9 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: $grayMediumLight;
-
+  margin-left: 50px;
+  margin-right: 50px;
+  
 	a {
   	  color: #555;
 	  &:hover { 
