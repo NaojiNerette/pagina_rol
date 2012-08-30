@@ -1,8 +1,14 @@
 PaginaRol::Application.routes.draw do
-  root to: 'static_pages#inicio'
+  resources :comments
+  resources :posts do
+   resources :comments
+  end
+
+  root to: 'posts#index'
+  match '/inicio',	to: 'static_pages#inicio'
   match '/ayuda',	to: 'static_pages#ayuda'
   match '/about', 	to: 'static_pages#about'
-  match '/content1',	to: 'content#rocknroll'
+  #match '/content1',	to: 'content#rocknroll'
   #match '/images'
   
 

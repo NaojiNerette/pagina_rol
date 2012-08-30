@@ -1,0 +1,16 @@
+%div.texto_contenido
+  %h1 Contenidos
+  = @posts.each do |post|
+    %tr
+      %td
+        %h2.titulo_contenido
+          = link_to post.title, post , :title => 'Ver el contenido completo!'
+      %td
+        %span.tipo_contenido= post.category 
+        %span -
+        = post.created_at
+      %br
+      %br
+  %br
+  %br
+  = link_to '<< Nuevo Contenido', new_post_path 
