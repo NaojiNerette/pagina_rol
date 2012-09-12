@@ -80,4 +80,15 @@ class PostsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  
+  def adm_edicion
+    @posts = Post.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @posts }
+    end
+  end
+
 end

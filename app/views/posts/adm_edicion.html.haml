@@ -1,6 +1,5 @@
 %div.texto_contenido
   %h1 Contenidos
-  %table
   - @posts.each do |post|
     %tr
       %td
@@ -11,5 +10,10 @@
         %span -
         %span.creacion_contenido= post.created_at
       %br
+      = link_to '<< Editar', edit_post_path(post)
+      = link_to 'X Eliminar', post, confirm: 'Are you sure?', method: :delete
+      %br
+      %br
+  = link_to '<< Nuevo Contenido', new_post_path 
   
 

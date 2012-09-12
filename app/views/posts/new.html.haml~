@@ -1,0 +1,8 @@
+%div.texto_contenido
+  %h1 Nuevo Contenido
+  
+  = link_to '<< Volver', posts_path
+  %br
+  = render 'form'
+  %br
+  = link_to '<< Volver', posts_path

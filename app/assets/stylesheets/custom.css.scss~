@@ -43,7 +43,7 @@ textarea {
 }
 
 .texto_contenido{
-  padding: 50px;
+  padding: 20px 40px;
   margin-bottom: 20px;
   background-color: whiteSmoke;
   -webkit-border-radius: 6px;
@@ -68,7 +68,7 @@ textarea {
   margin-bottom: 0px;
 }
 .tipo_contenido{
-  text-align: left;
+  text-align: right;
   font-weight: bold;
   font-style: italic;
 }
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -143,7 +143,7 @@ p {
   //border-radius: 4px;
   background-color: currentcolor;
   .imagen{
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 30px;
     border-radius: 6px;
   }
@@ -237,4 +237,32 @@ footer {
 	  }
 	}
 }
+
+/* FORMULARIOS */
+.titulo_formulario{
+  width: 100%;
+}
+.contenido_formulario{
+  width: 100%;
+  height: 150px;
+}
+
+
+/* COMENTARIOS */
+
+.comentario{
+  background-color: black;
+  padding: 5px;
+  color: lightslategrey;
+
+}
+
+.titulo_comentario{
+  width: 40%;
+}
+.contenido_comentario{
+  width: 90%;
+  height: 80px;
+}
+
 

@@ -1,0 +1,30 @@
+%p#notice= notice
+%h1= @post.title
+%div.texto_contenido
+  %span
+    %b= @post.category + " - " + @post.created_at.to_s
+  %br/
+  %br/
+  %p.parrafo_contenido= @post.body 
+  %br/
+  %b= @post.comments.count.to_s + " comentarios"
+
+  - @post.comments.each do |c|
+    %p.comentario
+      %b= c.name.to_s + " dice:"
+      %br/
+      = c.body 
+  %br/ 
+
+  %b Nuevo comentario:
+  = form_for [@post, @post.comments.build] do |f| 
+    %div.field
+      = f.label "Nombre"
+      = f.text_field :name, :class => 'titulo_comentario'
+    %div.field
+      = f.label "Contenido" 
+      = f.text_area :body, :class => 'contenido_comentario' 
+    %div.actions
+      = f.submit "Comentar"
+
+  = link_to '<< Volver', root_path, :title => 'Volver'
