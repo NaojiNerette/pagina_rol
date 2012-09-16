@@ -1,5 +1,15 @@
 %h1 Editar contenido
 %div.texto_contenido
   = render 'form'
+  %p 
+    %b Comentarios:
+  - @post.comments.each do |c|
+    %p.comentario
+      %b= c.name.to_s + " dice:"
+      %br/
+      = c.body 
+      %br/
+      = link_to '[X ELIMINAR]', c, confirm: 'Seguro de borrar este comentario?', method: :delete
+  %br/
   = link_to '<< Mostrar', @post 
   = link_to '<< Volver', posts_path 
