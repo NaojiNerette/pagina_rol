@@ -1,11 +1,9 @@
 %p#notice= notice
 %h1= @post.title
 %div.texto_contenido
-  %span
-    %b= @post.category + " - " + @post.created_at
-  %br/
-  %br/
-  %p.parrafo_contenido= @post.body 
+  %span.fecha_creacion
+    %b= @post.category + " - " + @post.created_at.to_s
+  %p.parrafo_contenido= markdown @post.body
   %br/
   %b= @post.comments.count.to_s + " comentarios"
 

@@ -1,9 +1,9 @@
 %header.header_general
   .header_titulo
     %div.center.imagen
-      = image_tag 'titulo.png'
-      %div.menu_nav
-        %nav
+      = image_tag 'titulo.png' :class => 'logo_titulo'
+      %nav
+        %div.menu_nav
           %ul 
             %li
               = link_to "Inicio",root_path
