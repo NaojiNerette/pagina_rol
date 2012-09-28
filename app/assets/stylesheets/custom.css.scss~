@@ -84,6 +84,7 @@ textarea {
 .fecha_creacion{
   color:green;
   margin-left:40px;
+  float:right;
 }
 
 .imagen_interior_contenido{
