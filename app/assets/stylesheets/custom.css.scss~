@@ -62,6 +62,15 @@ textarea {
       max-width: 250px;  
     }
   }
+  .imagen_contenido_derecha{
+    position: relative;
+    float: right; 
+    margin-left: 10px;
+    margin-right: 20px;
+    img {
+      max-width: 250px;  
+    }
+  }
 }
 
 .titulo_contenido{
@@ -176,6 +185,9 @@ p {
     margin-bottom: 5%;
     height: 25px;
     border-radius:3px;
+    a{
+      color:red;
+    }
   }
   .logo_titulo{
     width: 70%;
@@ -276,5 +288,19 @@ footer {
   width: 90%;
   height: 80px;
 }
+
+/* BOTONES */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  padding: 6px;
+  background-color: black;
+  color: lightslategrey;
+  border: 2px solid lightslategrey;
+  border-radius: 6px; 
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
 
 
