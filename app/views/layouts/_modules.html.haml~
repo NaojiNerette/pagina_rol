@@ -1,3 +1,4 @@
 %div.modulo_derecha
   %div.contenido_modulo_der
-   = render 'user/user' 
+    = render 'user/user' 
+    = render_navigation &my_menu_items

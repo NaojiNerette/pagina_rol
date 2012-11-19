@@ -2,7 +2,7 @@
 %h1= @post.title
 %div.texto_contenido
   %span.fecha_creacion
-    %b= @post.category + " - " + @post.created_at.to_s
+    %b= @post.category + " - " + @post.created_at.to_s(:formateo_corto)
   %br/
   %p.parrafo_contenido= markdown @post.body
   %br/

@@ -4,6 +4,7 @@ gem 'rails', '3.2.1'
 gem 'bootstrap-sass', '2.0.0'
 gem 'haml'
 gem 'redcarpet', '~> 1.17.2'
+gem 'simple-navigation'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

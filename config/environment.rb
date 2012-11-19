@@ -8,3 +8,5 @@ PaginaRol::Application.initialize!
 #config.gem "haml"
 Haml::Template.options[:format] = :html5
 
+# Formateo de fechas
+Time::DATE_FORMATS[:formateo_corto] = "%d-%m-%Y %H:%M:%S"

@@ -7,7 +7,7 @@
     %div
       %span.tipo_contenido= post.category 
       %span -
-      %span.creacion_contenido= post.created_at
+      %span.creacion_contenido= post.created_at.to_s(:formateo_corto)
     %br
   
 

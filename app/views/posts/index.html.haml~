@@ -1,15 +1,13 @@
 %div.texto_contenido
   %h1 Contenidos
-  %table
   - @posts.each do |post|
-    %tr
-      %td
-        %h2.titulo_contenido
-          = link_to post.title, post , :title => 'Ver el contenido completo!'
-      %td
-        %span.tipo_contenido= post.category 
-        %span -
-        %span.creacion_contenido= post.created_at
-      %br
+    %div
+      %h2.titulo_contenido
+        = link_to post.title, post , :title => 'Ver el contenido completo!'
+    %div
+      %span.tipo_contenido= post.category 
+      %span -
+      %span.creacion_contenido= post.created_at
+    %br
   
 

@@ -1,7 +1,7 @@
 %header.header_general
   .header_titulo
     %div.center.imagen
-      = image_tag 'titulo.png' :class => 'logo_titulo'
+      = image_tag 'titulo.png', :class => 'logo_titulo'
       %nav
         %div.menu_nav
           %ul 

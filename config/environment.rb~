@@ -5,6 +5,8 @@ require File.expand_path('../application', __FILE__)
 PaginaRol::Application.initialize!
 
 #Configuracion HAML
-config.gem "haml"
+#config.gem "haml"
 Haml::Template.options[:format] = :html5
 
+# Formateo de fechas
+Time::DATE_FORMATS[:due_time] = "%d-%m-%Y %H:%M:%S"

@@ -10,7 +10,6 @@ PaginaRol::Application.routes.draw do
   match '/about', 	to: 'static_pages#about'
   match '/content1',	to: 'content#rocknroll'
   match '/adm/edicion', to: 'posts#adm_edicion'
-  #match '/adm/edicion/post', to: 'posts#adm_edicion_post'
   #match '/images'
   
 

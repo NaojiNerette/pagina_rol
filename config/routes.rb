@@ -6,7 +6,7 @@ PaginaRol::Application.routes.draw do
 
   root to: 'posts#index'
   match '/inicio',	to: 'static_pages#inicio'
-  match '/ayuda',	to: 'static_pages#ayuda'
+  match '/contacto',	to: 'static_pages#ayuda'
   match '/about', 	to: 'static_pages#about'
   match '/content1',	to: 'content#rocknroll'
   match '/adm/edicion', to: 'posts#adm_edicion'
