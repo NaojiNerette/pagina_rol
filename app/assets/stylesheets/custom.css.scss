@@ -71,6 +71,15 @@ textarea {
       max-width: 250px;  
     }
   }
+  .imagen_contenido_centrada{
+    margin-top: 10px;
+    //margin-bottom: 10px;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 .titulo_contenido{

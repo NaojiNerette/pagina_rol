@@ -71,6 +71,15 @@ textarea {
       max-width: 250px;  
     }
   }
+  .imagen_contenido_centrada{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 .titulo_contenido{
@@ -186,7 +195,7 @@ p {
     height: 25px;
     border-radius:3px;
     a{
-      color:red;
+      color:#fff;
     }
   }
   .logo_titulo{
